@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Kena Pechacek's Portfolio</title>
+	<meta name="description" content="Francis Tuttle Web Design and Development Student Portfolio. Watch me grow into a future web professional.">
+	<meta name="author" content="Kena Pechacek">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<h1>Chapter 11 Notes</h1>
+<h2>Chapter 11</h2>
+<p> In this chapter we learned how to merge code with the branch and you would do it like this git merge the name of the file and then push ender and it will give you a list of the changes that are begin merged. The next thing we learned is the difference between fast-forward merges and real-merges and that is that in a fast-forward merge  you don't change the branch you just merge the other in to it by simply typing git merge name of document and there was no need to make a new commit it could just merge the new file in it . a real merge is when you want some documentation that you did that and you would do it like this git merge --no-ff branch name. and the last option it git merge --ff-only which says only do the merge if you can do a fast forward merge. The next thing we learned in this chapter is merging Conflicts and you would fix this by telling the git witch merge you want to use because git will not know which copy of the file you want when you have two copies of it in two different branches. The next thing that was learned was how to resolve  merge conflicts and you do that like this the first thing you can do is abort the merge if you messed up and didn't mean to do that , the second way you can do it is to resolve the merge manually. To abort the merge all you have to do is git --abort and this will abort the merge. to manually merge the files you do it by committing the file and it will merge. Then we learned how to explore strategies to reduce conflicts and some of them are Pre merge check-Before applying outside changes, you should get your own work in good shape and committed locally, so it will not be clobbered if there are conflicts. See also git-stash(1). git pull and git merge will stop without doing anything when local uncommitted changes overlap with files that git pull/git merge may need to update.
+
+To avoid recording unrelated changes in the merge commit, git pull and git merge will also abort if there are any changes registered in the index relative to the HEAD commit. (One exception is when the changed index entries are in the state that would result from the merge already.)
+
+If all named commits are already ancestors of HEAD, git merge will exit early with the message "Already up-to-date." how to resolve a conflict- After seeing a conflict, you can do two things:
+
+Decide not to merge. The only clean-ups you need are to reset the index file to the HEAD commit to reverse 2. and to clean up working tree changes made by 2. and 3.; git merge --abort can be used for this.
+
+Resolve the conflicts. Git will mark the conflicts in the working tree. Edit the files into shape and git add them to the index. Use git commit to seal the deal.
+
+You can work through the conflict with a number of tools:
+
+Use a mergetool. git mergetool to launch a graphical mergetool which will work you through the merge.
+
+Look at the diffs. git diff will show a three-way diff, highlighting changes from both the HEAD and MERGE_HEAD versions.
+
+Look at the diffs from each branch. git log --merge -p < path> will show diffs first for the HEAD version and then the MERGE_HEAD version.
+
+Look at the originals. git show :1:filename shows the common ancestor, git show :2:filename shows the HEAD version, and git show :3:filename shows the MERGE_HEAD version.</p>
+</body>
+</html>
